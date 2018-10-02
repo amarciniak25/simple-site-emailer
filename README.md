@@ -8,7 +8,7 @@ ruby simple-site-emailer.rb --site https://google.com --pattern body --address s
 I use a cron job to run the program every twenty min.
 
 ### Example cron Line
-*/20 * * * * /usr/bin/ruby ~/simple-site-emailer/ruby simple-site-emailer.rb --site https://google.com --pattern body --address smtp.someserver.com --user myusername --pass mypassword --domain mydomain
+*/20 * * * * /usr/bin/ruby ~/simple-site-emailer/simple-site-emailer.rb --site https://google.com --pattern body --address smtp.someserver.com --user myusername --pass mypassword --domain mydomain
 
 ## Background
 We needed a method for notifiing ourselfs when an internal web app goes down. Uptime monitoting services would not work because the app is only accessable from the inside.
